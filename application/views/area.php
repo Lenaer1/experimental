@@ -1,6 +1,6 @@
 <head>
     <meta charset=utf-8 />
-    <title>Codeigniter 4 Area Chart and Line Chart Demo</title>
+    <title>Codeigniter 3 Area Chart and Line Chart Demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -10,6 +10,7 @@
             <div id="lineChart"></div>
         </div>                
         
+
         <div>
             <label class="label label-success">Codeigniter Area Chart Example</label>
             <div id="areaChart"></div>
@@ -20,35 +21,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
     <script>
-            var data = [
-                {
-                    "year": "2004",
-                    "expenses": "1000"
-                }, 
-                {
-                    "year": "2005",
-                    "expenses": "1250"
-                }, 
-                {
-                    "year": "2006",
-                    "expenses": "1400"
-                }, 
-                {
-                    "year": "2007",
-                    "expenses": "1640"
-                }, 
-                {
-                    "year": "20015",
-                    "expenses": "9640"
-                }, 
-                {
-                    "year": "2020",
-                    "expenses": "2640"
-                },                                 
-            ]
-            var data = data,
+            var areaserries = <?php echo json_encode($products); ?>;
+           
+            var data = areaserries,
                 config = {
-                    data: data,
+                    data: <?php echo json_encode($products); ?>,
                     fillOpacity: 0.5,                
                     xkey: 'year',
                     ykeys: ['expenses'],

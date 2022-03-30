@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 29, 2022 at 03:47 PM
+-- Generation Time: Mar 30, 2022 at 04:36 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -20,6 +20,30 @@ SET time_zone = "+00:00";
 --
 -- Database: `experimental`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `area`
+--
+
+CREATE TABLE `area` (
+  `id` int(100) NOT NULL,
+  `year` varchar(100) NOT NULL,
+  `expenses` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `area`
+--
+
+INSERT INTO `area` (`id`, `year`, `expenses`) VALUES
+(1, '2010', '10000'),
+(2, '2015', '15000'),
+(3, '2020', '20000'),
+(4, '2025', '25000'),
+(5, '2030', '30000'),
+(6, '2040', '40000');
 
 -- --------------------------------------------------------
 
@@ -98,6 +122,28 @@ INSERT INTO `product` (`id`, `name`, `sell`, `created_at`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `code` varchar(20) NOT NULL,
+  `active` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `email`, `password`, `code`, `active`) VALUES
+(1, 'amagovelenear@gmail.com', '1234567', '6ZH3OBlarfAh', 1),
+(2, 'amagovelenear@gmail.com', '1234567', 'S5l4CcgU9RvJ', 1);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user_locations`
 --
 
@@ -125,6 +171,12 @@ INSERT INTO `user_locations` (`id`, `latitude`, `longitude`, `location_name`, `i
 --
 
 --
+-- Indexes for table `area`
+--
+ALTER TABLE `area`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `ci_services`
 --
 ALTER TABLE `ci_services`
@@ -134,6 +186,12 @@ ALTER TABLE `ci_services`
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -147,6 +205,12 @@ ALTER TABLE `user_locations`
 --
 
 --
+-- AUTO_INCREMENT for table `area`
+--
+ALTER TABLE `area`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT for table `ci_services`
 --
 ALTER TABLE `ci_services`
@@ -157,6 +221,12 @@ ALTER TABLE `ci_services`
 --
 ALTER TABLE `product`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `user_locations`

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Codeigniter 4 Show Multiple Markers on Google Map Example</title>
+	<title>Codeigniter 3 Show Multiple Markers on Google Map Example</title>
 	<meta name="description" content="The tiny framework with powerful features">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	

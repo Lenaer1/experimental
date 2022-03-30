@@ -82,15 +82,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1>Experimental Site where we try out all desirable user functionalities</h1>
 
 	<div id="body">
-		<a type="button" class="btn btn-primary" href="<?php echo base_url()?>showMap">Map</a><br/>
-		<a type="button" class="btn btn-primary" href="<?php echo base_url()?>areaChart">Area Chart</a><br/>
-		<a type="button" class="btn btn-primary" href="<?php echo base_url()?>barlineChart">Bar and Line Graph</a><br/>
-		<a type="button" class="btn btn-primary" href="<?php echo base_url()?>columnChart">Column Chart</a><br/>
-		<a type="button" class="btn btn-primary" href="<?php echo base_url()?>mailform">Mail</a><br/>
-		<a type="button" class="btn btn-primary" href="<?php echo base_url()?>startChart">Morris chart</a><br/>
-		<a type="button" class="btn btn-primary" href="<?php echo base_url()?>initChart">pie Chart</a><br/>
-		<a type="button" class="btn btn-primary" href="<?php echo base_url()?>generatepdf">generatepdf</a><br/>
-		<a type="button" class="btn btn-primary" href="<?php echo base_url()?>getlocation">Get Location</a><br/>
+		<ol type = "1">
+		<li> <a type="button" class="btn btn-primary" href="<?php echo base_url()?>showMap">Map</a></li>
+		<li>  <a type="button" class="btn btn-primary" href="<?php echo base_url()?>getlocation">Get Location</a></li>
+		<li>  <a type="button" class="btn btn-primary" href="<?php echo base_url()?>areaChart">Area Chart</a></li>
+		<li>  <a type="button" class="btn btn-primary" href="<?php echo base_url()?>barlineChart">Bar and Line Graph</a></li>
+		<li>  <a type="button" class="btn btn-primary" href="<?php echo base_url()?>columnChart">Column Chart</a></li>
+		<li>  <a type="button" class="btn btn-primary" href="<?php echo base_url()?>startChart">Morris chart</a></li>
+		<li>  <a type="button" class="btn btn-primary" href="<?php echo base_url()?>initChart">pie Chart</a></li>
+		<li>  <a type="button" class="btn btn-primary" href="<?php echo base_url()?>generatepdf">generatepdf</a></li>
+		<li>  <a type="button" class="btn btn-primary" href="<?php echo base_url()?>mailform">Send Email</a></li>
+		<li>  <a type="button" class="btn btn-primary" href="<?php echo base_url()?>register">Email verification link</a></li>
+		<li>  <a type="button" class="btn btn-primary" href="<?php echo base_url()?>emailattachment">Email Attachment</a></li>
+		</ol>
 		
 	</div>
 
