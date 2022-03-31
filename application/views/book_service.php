@@ -65,7 +65,7 @@
 			}
 			
 			var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-				this.setZoom(5);
+				this.setZoom(15);
 				google.maps.event.removeListener(boundsListener);
 			});
 	
