@@ -4,6 +4,7 @@
     	<meta charset="utf-8">
     	<title>CodeIgniter Signup with Email Verification</title>
     	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>bootstrap/css/bootstrap.min.css">
+          <?php $this->load->view('admin_header');?>
     </head>
     <body>
     <div class="container">
@@ -77,4 +78,5 @@
     	</div>
     </div>
     </body>
+    <?php $this->load->view('admin_footer');?>
     </html>

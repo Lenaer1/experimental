@@ -6,6 +6,7 @@
 	<title>Codeigniter Morris Stacked and Bar Charts Demo</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+	
 </head>
 <body>
 	<body>
@@ -50,3 +51,4 @@
 		</script>
 	</body>
 </html>
+<?php $this->load->view('admin_footer');?>

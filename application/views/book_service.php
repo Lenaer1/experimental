@@ -16,6 +16,7 @@
 		  height: 450px;
 	  }
 	</style>
+	<?php $this->load->view('admin_header');?>
 </head>
 <body>
 <div class="container mt-5">
@@ -75,3 +76,4 @@
 
 </body>
 </html>
+<?php $this->load->view('admin_footer');?>

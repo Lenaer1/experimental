@@ -22,6 +22,19 @@ function book_service()
         $this->load->view('book_service');
 
     }
+function admin()
+    {
+
+        $this->load->view('admin');
+
+    }
+
+    function welcome()
+    {
+
+        $this->load->view('welcome_message');
+
+    }
 
     // this function receive ajax request and return closest providers
     function closest_locations(){
@@ -335,8 +348,8 @@ function getAddress($address)
           'smtp_host' => 'smtp.gmail.com',
           'smtp_crypto' => 'tls',
           'smtp_port' => 587,//25,587,465 or 2525
-          'smtp_user' => 'xxxxxxx', // change it to yours
-          'smtp_pass' => 'xxxxxxxxxx', // change it to yours
+          'smtp_user' => 'amagovelenear@gmail.com', // change it to yours
+          'smtp_pass' => 'LAAMMWONDI1.', // change it to yours
           'mailtype' => 'html',
           'charset' => 'iso-8859-1',
           'wordwrap' => TRUE

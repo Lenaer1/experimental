@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Google Bar & Column Charts in Codeigniter</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+	<?php $this->load->view('admin_header');?>
 </head>
 <body>
 	<body>
@@ -64,4 +65,5 @@
 			
 		</script>
 	</body>
+	<?php $this->load->view('admin_footer');?>
 </html>

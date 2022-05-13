@@ -53,7 +53,7 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 
 
-$route['^(book_service|closest_locations|showMap|initChart|startChart|barlineChart|columnChart|areaChart|sendMail|mailform|generatepdf|getlocation|register|saveregister|activate|sendemailattachment|emailattachment|deleteFiles|getAddress)(/:any)?$'] = "Pages/$0"; 
+$route['^(book_service|closest_locations|showMap|initChart|startChart|barlineChart|columnChart|areaChart|sendMail|mailform|generatepdf|getlocation|register|saveregister|activate|sendemailattachment|emailattachment|deleteFiles|getAddress|admin|welcome)(/:any)?$'] = "Pages/$0"; 
 
 
 $route['verify/(:any)'] = "/Registration/verify/$1";
